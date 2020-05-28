@@ -12,7 +12,7 @@ const Logo = () => {
                 </div>
             </Tilt>
         </div>
-    )
+    );
 }
 
 export default Logo;
