@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
-import particlesOptions from './utils';
+import { particlesOptions } from './utils';
 import Navigation from './Components/Navigation/Navigation';
+import SignIn from './Components/SignIn/SignIn';
 import FaceRecognition from './Components/FaceRecognition/FaceRecognition';
 import Logo from './Components/Logo/logo';
-import SignIn from './Components/SignIn/SignIn';
 import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm';
 import Rank from './Components/Rank/Rank';
 import './App.css';
+
 
 
 const app = new Clarifai.App({
@@ -47,7 +48,7 @@ class App extends Component {
 
   onInputChange = (event) => {
     this.setState({input: event.target.value});
-  }
+  }  
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
