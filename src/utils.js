@@ -3,7 +3,7 @@ import Clarifai from 'clarifai';
 export const particlesOptions = {
   particles: {
     number: {
-      value: 100,
+      value: 60,
       density: {
         enable: true,
         value_area: 800

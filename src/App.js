@@ -12,7 +12,7 @@ import './App.css';
 
 
 
-const app = new Clarifai.App({
+const faceApp = new Clarifai.App({
   apiKey: 'af3b8e8ffc3a4fd0bd13a3084e57439a'
  });
 
@@ -52,7 +52,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    app.models
+    faceApp.models
       .predict(
         Clarifai.FACE_DETECT_MODEL, 
         this.state.input)
