@@ -8,7 +8,6 @@ import Rank from './Components/Rank/Rank';
 import './App.css';
 import Clarifai from 'clarifai';
 
-
 const app = new Clarifai.App({
   apiKey: 'af3b8e8ffc3a4fd0bd13a3084e57439a'
  });
@@ -16,7 +15,7 @@ const app = new Clarifai.App({
 const particlesOptions = {
   particles: {
     number: {
-      value: 100,
+      value: 50,
       density: {
         enable: true,
         value_area: 800
